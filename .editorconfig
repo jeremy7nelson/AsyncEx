@@ -1,0 +1,71 @@
+# NOTE: Requires **VS2019 16.3** or later
+
+# Analyzer rules.
+# Description: Start with all rules enabled and disable the ones we don't want.
+
+# Code files
+[*.{cs,vb}]
+
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = warning
+
+# IDE0001: Simplify Names
+dotnet_diagnostic.IDE0001.severity = none
+
+# IDE0004: Remove Unnecessary Cast
+dotnet_diagnostic.IDE0004.severity = none
+
+# IDE0005: Using directive is unnecessary.
+dotnet_diagnostic.IDE0005.severity = none
+
+# IDE0011: Add braces
+csharp_prefer_braces = true:none
+
+# IDE0016: Use 'throw' expression
+csharp_style_throw_expression = true:none
+
+# IDE0019: Use pattern matching
+csharp_style_pattern_matching_over_as_with_null_check = true:none
+
+# IDE0022: Use block body for methods
+csharp_style_expression_bodied_methods = false:none
+
+# IDE0025: Use expression body for properties
+csharp_style_expression_bodied_properties = true:none
+
+# IDE0027: Use expression body for accessors
+csharp_style_expression_bodied_accessors = true:none
+
+# IDE0032: Use auto property
+dotnet_style_prefer_auto_properties = true:none
+
+# IDE0034: Simplify 'default' expression
+csharp_prefer_simple_default_expression = true:none
+
+# IDE0034WithoutSuggestion: Simplify 'default' expression
+dotnet_diagnostic.IDE0034WithoutSuggestion.severity = none
+
+# IDE0039: Use local function
+csharp_style_pattern_local_over_anonymous_function = true:none
+
+# IDE0046: Convert to conditional expression
+dotnet_style_prefer_conditional_expression_over_return = true:none
+
+# IDE0047: Remove unnecessary parentheses
+dotnet_diagnostic.IDE0047.severity = none
+
+# IDE0049: Simplify Names
+dotnet_style_predefined_type_for_locals_parameters_members = true:none
+
+# IDE0049: Simplify Names
+dotnet_style_predefined_type_for_member_access = true:none
+
+# IDE0055: Fix formatting
+dotnet_diagnostic.IDE0055.severity = none
+
+# IDE0059: Unnecessary assignment of a value
+csharp_style_unused_value_assignment_preference = discard_variable:none
+
+# IDE0063: Use simple 'using' statement
+csharp_prefer_simple_using_statement = true:none
